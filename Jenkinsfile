@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloner le dépôt') {
       steps {
-        git 'https://github.com/wiirhis/jenkins-hello-pipeline'
+        git branch: 'main', url: 'https://github.com/wiirhis/jenkins-hello-pipeline'
       }
     }
 
